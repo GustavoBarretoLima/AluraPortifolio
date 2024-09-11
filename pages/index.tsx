@@ -1,16 +1,14 @@
-import React from "react";
-import Box from "@src/components/Box";
-import theme from "@src/theme/theme";
+export { default } from '@src/screens/HomeScreen/HomeScreen';
 
-export default function HomeScreen() {
-    return (
-        <Box
-        tag="main"
-        styleSheet={{
-            fontFamily: theme.typography.fontFamily,
-        }}
-        >
-            oi ola oi
-        </Box>
-    )
-}
+// export default function HomeScreen() {
+//     return (
+//         <Box
+//         tag="main"
+//         styleSheet={{
+//             fontFamily: theme.typography.fontFamily,
+//         }}
+//         >
+//             oi ola oi
+//         </Box>
+//     )
+// }
