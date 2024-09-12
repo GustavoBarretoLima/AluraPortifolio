@@ -1,6 +1,8 @@
-import Box from "@src/components/Box";
+import Box from "@src/components/Box/Box";
 import Background from "./patterns/Background/Background";
 import Menu from "./patterns/Menu/Menu";
+import Text from "@src/components/Text/Text";
+import Feed from "./patterns/Feed/Feed";
 
 export default function HomeScreen () {
     return (
@@ -8,7 +10,14 @@ export default function HomeScreen () {
         tag="main" 
       >
         <Background />  
-        <Menu />         
+        <Menu />     
+        <Feed>
+          <Feed.Header />
+          <Text>
+            Últimas Atualizações 
+          </Text>
+          <Feed.Posts />
+        </Feed>    
       </Box>
     )
 }

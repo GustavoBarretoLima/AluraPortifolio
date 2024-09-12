@@ -1,6 +1,7 @@
+import theme from "@src/theme/theme";
 import React from "react";
-import Box from "../Box";
-import { text } from "stream/consumers";
+import Box from "../Box/Box";
+
 
 interface TextProps {
     tag?: 'p' | 'li' | 'h1' | string;
@@ -8,7 +9,12 @@ interface TextProps {
 }
 export default function Text (props: TextProps) {
     return (
-        <Box {...props} />
+        <Box
+        styleSheet={{
+            fontFamily: theme.typography.fontFamily, 
+         }}
+        {...props}
+        />
     )
 }
 
