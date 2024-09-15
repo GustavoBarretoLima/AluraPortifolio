@@ -1,17 +1,27 @@
+import { StyleSheet } from "@src/theme/Stylesheet";
 import theme from "@src/theme/theme";
 import React from "react";
-import Box from "../Box/Box";
-
+import { BaseComponent } from "@src/theme/BaseComponent";
 
 interface TextProps {
+    variant: 'display1';
     tag?: 'p' | 'li' | 'h1' | string;
     children?: React.ReactNode;
+    styleSheet?: StyleSheet;
 }
-export default function Text (props: TextProps) {
+export default function Text ({
+    styleSheet,
+    variant,
+    ...props}: TextProps) {
+
+    const textVariant = theme.typography.variants[variant];
+
     return (
-        <Box
+        <BaseComponent
         styleSheet={{
             fontFamily: theme.typography.fontFamily, 
+            ...textVariant,
+            ...styleSheet,
          }}
         {...props}
         />
@@ -20,4 +30,5 @@ export default function Text (props: TextProps) {
 
 Text.defaultProps = {
     tag:'p',
+    variant: 'body2'
 };

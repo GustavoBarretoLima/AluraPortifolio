@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { StyleSheet } from "@skynexui/responsive_stylesheet";
+import { StyleSheet } from '@src/theme/Stylesheet';
 import { parseStyleSheet } from "@skynexui/responsive_stylesheet";
 
 interface StyledBaseComponent {
@@ -8,13 +8,18 @@ interface StyledBaseComponent {
 }
 
 const StyledBaseComponent = styled.div<StyledBaseComponent>`
-${({ styleSheet }) =>parseStyleSheet(styleSheet) }`; 
+ display: flex;
+ flex-direction: column;
+ align-content: flex-start;
+ flex-shrink: 0;
+${({ styleSheet }) =>parseStyleSheet(styleSheet) }`;
 
 export const BaseComponent = (props) => {
     return (
      <StyledBaseComponent {...props} />
     )
-} 
+}
 BaseComponent.defaultProps = {
     styleSheet: {},
 }
+

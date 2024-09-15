@@ -9,12 +9,15 @@ export default function HomeScreen () {
     return (
       <Box
         tag="main" 
+        styleSheet={{ backgroundColor: 'grey',
+          flex: 1,
+         }}
       >
         <Background />  
         <Menu />     
         <Feed>
           <Feed.Header />
-          <Text>
+          <Text variant='display1'>
             Últimas Atualizações 
           </Text>
           <Feed.Posts />
