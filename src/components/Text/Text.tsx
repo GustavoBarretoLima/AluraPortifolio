@@ -6,7 +6,7 @@ import { useTheme } from "@src/theme/ThemeProvider";
 
 interface TextProps {
     variant: ThemeTypographyVariants;
-    tag?: 'p' | 'li' | 'h1' | string;
+    tag?: 'p' | 'li' | 'h1' | 'h2';
     children?: React.ReactNode;
     styleSheet?: StyleSheet;
 }
