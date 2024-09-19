@@ -1,5 +1,5 @@
 import { BaseComponent } from "@src/theme/BaseComponent";
-import { StyleSheet } from "@src/theme/Stylesheet";
+import { StyleSheet } from "@src/theme/StyleSheet";
 import React from "react"; 
 
 

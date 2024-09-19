@@ -3,20 +3,19 @@ import {
   ThemeProvider as StyledThemeProvider,
   useTheme as useThemeStyled,
 } from 'styled-components';
-import theme, { Theme } from './theme';
+import theme, { Theme } from "./theme";
 
-export function useTheme (): Theme {
-  return useThemeStyled () as unknown as any; 
+export function useTheme(): Theme {
+  return useThemeStyled() as unknown as any;
 }
 
 interface ThemeProviderProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
-
 export default function ThemeProvider({ children }: ThemeProviderProps) {
- return (
+  return (
     <StyledThemeProvider theme={theme}>
-      {children}  
+      {children}
     </StyledThemeProvider>
- )
+  )
 }
