@@ -5,6 +5,7 @@ import Background from "./patterns/Background/Background";
 import Feed from "./patterns/Feed/Feed";
 import Footer from "./patterns/Footer/Footer";
 import Menu from "./patterns/Menu/Menu";
+import Link from "@src/components/Link/Link"
 
 
 export default function HomeScreen() {
@@ -14,17 +15,23 @@ export default function HomeScreen() {
     <Box
       tag="main"
       styleSheet={{
-        backgroundColor: theme.colors.neutral.x700,
+        backgroundColor: theme.colors.neutral.x600,
         flex: 1,
         alignItems: 'center',
       }}
     >
+      <Link href="/sobre">
+      Vá para página sobre
+      </Link>
+      <Link href="https://google.com">
+      Ir para o google
+      </Link>
       <Background />
       <Menu />
       <Feed>
         <Feed.Header />
         <Text tag="h2" variant="heading1">
-          Últimas Atualizações
+          Últimos Projetos
         </Text>
         <Feed.Posts />
       </Feed>
