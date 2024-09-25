@@ -11,9 +11,9 @@ interface LinkProps {
   children: React.ReactNode;
   styleSheet?: StyleSheet;
   variant?: ThemeTypographyVariants;
-  colorVariant?: 'primary' | 'accent' | 'neutral' | 'success' | 'warning' | 'negative';
+  colorVariant?: 'primary' | 'accent' | 'neutral' | 'warning' | 'negative';
   colorVariantEnabled?: boolean;
-}
+};
 
 const Link = React.forwardRef(({
   href,
