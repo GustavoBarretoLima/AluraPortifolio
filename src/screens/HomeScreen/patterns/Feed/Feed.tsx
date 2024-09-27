@@ -22,19 +22,23 @@ export default function Feed({ children }) {
 Feed.Header = () => {
   return (
     <Box>
-      <Button.Base href='http:'>
+      <Button>
+        Ola Mundo!!!
+      </Button>
+      <Button.Base  href='https://github.com/GustavoBarretoLima'>
         <Image
           styleSheet={{
             width: "128px",
             heigth: "128px",
             borderRadius: "100%",
+            target: '_blank'
           }}
           src="https://github.com/GustavoBarretoLima.png"
           alt="Imagem de perfil Gustavo Barreto"
         />
       </Button.Base>
 
-      <Link href="https://www.youtube.com/@0taichou">
+      <Link colorVariant="negative" href="https://www.youtube.com/@0taichou">
         <Icon name="youtube" />
       </Link>
       <Icon name="twitch" />
