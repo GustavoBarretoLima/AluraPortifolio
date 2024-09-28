@@ -25,13 +25,12 @@ Feed.Header = () => {
       <Button>
         Ola Mundo!!!
       </Button>
-      <Button.Base  href='https://github.com/GustavoBarretoLima'>
+      <Button.Base href='https://github.com/GustavoBarretoLima'>
         <Image
           styleSheet={{
             width: "128px",
             heigth: "128px",
             borderRadius: "100%",
-            target: '_blank'
           }}
           src="https://github.com/GustavoBarretoLima.png"
           alt="Imagem de perfil Gustavo Barreto"
