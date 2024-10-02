@@ -21,8 +21,12 @@ export default function HomeScreen() {
       }}
     >
       <Background />
+      <Menu />
+      <Feed>
+        <Feed.Header />
+      </Feed>
       <Footer />
-      {/* <Menu />
+      {/* 
       <Feed>
         <Feed.Header />
         <Text tag="h2" variant="heading1">
