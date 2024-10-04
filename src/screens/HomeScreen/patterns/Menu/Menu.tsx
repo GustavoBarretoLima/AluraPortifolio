@@ -4,25 +4,60 @@ import Icon from "@src/components/Icon/Icon";
 import Text from "@src/components/Text/Text";
 import { useTheme } from "@src/theme/ThemeProvider";
 
-export default function Menu () {
-    const theme = useTheme();
-    return (
-        <Box
-          styleSheet={{
-            position: 'absolute',
-            left: 0, right: 0, top: 0,
-            flexDirection: 'row',
-
-          }}
-        > 
-          <Button.Base>
-            <Text>
-              MS
-            </Text>
-          </Button.Base>
-          <Button.Base>  
-            <Icon name="default_icon" />         
-          </Button.Base>
-        </Box>
-    )
+export default function Menu() {
+  const theme = useTheme();
+  const baseSize = "40px";
+  return (
+    <Box
+      styleSheet={{
+        width: "100%",
+        position: "absolute",
+        left: 0,
+        right: 0,
+        top: 0,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        paddingVertical: "16px",
+        paddingHorizontal: "16px",
+        color: theme.colors.neutral.x000,
+      }}
+    >
+      <Button.Base
+        styleSheet={{
+          borderRadius: "100%",
+          width: baseSize,
+          height: baseSize,
+          alignItems: 'center',
+          justifyContent: 'center',          
+          backgroundColor: theme.colors.primary.x500,
+          hover: {
+            backgroundColor: theme.colors.primary.x400,
+          },
+          focus: {
+            backgroundColor: theme.colors.primary.x600,
+          },
+        }}
+      >
+        <Text>MS</Text>
+      </Button.Base>
+      <Button.Base
+        styleSheet={{
+          borderRadius: "100%",
+          width: baseSize,
+          height: baseSize,
+          alignItems: 'center',
+          justifyContent: 'center', 
+          backgroundColor: theme.colors.neutral.x500,
+          hover: {
+            backgroundColor: theme.colors.neutral.x400,
+          },
+          focus: {
+            backgroundColor: theme.colors.neutral.x600,
+          },
+        }}
+      >
+        <Icon name="menu" />
+      </Button.Base>
+    </Box>
+  );
 }
