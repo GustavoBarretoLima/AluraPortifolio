@@ -36,6 +36,7 @@ Feed.Header = () => {
     <Box
       styleSheet={{
         borderBottom: `1px solid ${theme.colors.neutral.x200}`,
+        paddingBottom: "24px",
         marginBottom: "24px",
       }}
     >
@@ -47,6 +48,8 @@ Feed.Header = () => {
           marginBottom: "16px",
         }}
       >
+        <Button.Base>
+
         <Image
           styleSheet={{
             width: { xs: "100px", md: "128px" },
@@ -56,23 +59,51 @@ Feed.Header = () => {
           src="https://github.com/GustavoBarretoLima.png"
           alt="Imagem de perfil Gustavo Barreto"
         />
+        </Button.Base>
         <Box
           styleSheet={{
             justifyContent: "space-between",
           }}
         >
-          <Button fullWidth colorVariant="primary" size="xl" href="/">
-            Newsletter
-          </Button>
-          <Button fullWidth colorVariant="neutral" size="xl" href="/">
-            Buy me a coffe
-          </Button>
+          <Box
+            styleSheet={{
+              flex: 1,
+              justifyContent: "space-between",
+              display: { xs: "none", md: "flex" },
+            }}
+          >
+            <Button fullWidth colorVariant="primary" size="xl" href="/">
+              Newsletter
+            </Button>
+            <Button fullWidth colorVariant="neutral" size="xl" href="/">
+              Buy me a coffe
+            </Button>
+          </Box>
+          <Box
+            styleSheet={{
+              flex: 1,
+              justifyContent: "space-between",
+              display: { xs: "flex", md: "none" },
+            }}
+          >
+            <Button fullWidth colorVariant="primary" size="xs" href="/">
+              Newsletter
+            </Button>
+            <Button fullWidth colorVariant="neutral" size="xs" href="/">
+              Buy me a coffe
+            </Button>
+          </Box>
         </Box>
       </Box>
-      <Button.Base href="https://github.com/GustavoBarretoLima">
-        <Text tag="h1" variant="heading4">
-          Gustavo Barreto
-        </Text>
+      <Button.Base>
+        <Link
+          colorVariant="neutral"
+          href="https://github.com/GustavoBarretoLima"
+        >
+          <Text tag="h1" variant="heading4">
+            Gustavo Barreto
+          </Text>
+        </Link>
       </Button.Base>
 
       <Link colorVariant="negative" href="https://www.youtube.com/@0taichou">
