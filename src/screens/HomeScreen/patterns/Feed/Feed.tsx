@@ -76,7 +76,7 @@ Feed.Header = () => {
               Newsletter
             </Button>
             <Button fullWidth colorVariant="neutral" size="xl" href="/">
-              Buy me a coffe
+            <Link href="https://livepix.gg/0taichou" colorVariant="warning">Buy me a coffe</Link>
             </Button>
           </Box>
           <Box
@@ -89,8 +89,8 @@ Feed.Header = () => {
             <Button fullWidth colorVariant="primary" size="xs" href="/">
               Newsletter
             </Button>
-            <Button fullWidth colorVariant="neutral" size="xs" href="/">
-              Buy me a coffe
+            <Button fullWidth colorVariant="warning" size="xs" href="/">
+              <Link href="https://livepix.gg/0taichou">Buy me a coffe</Link>
             </Button>
           </Box>
         </Box>

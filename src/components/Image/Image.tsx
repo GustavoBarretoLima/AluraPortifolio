@@ -1,5 +1,5 @@
 import { BaseComponent } from "@src/theme/BaseComponent";
-import { StyleSheet } from "@src/theme/StyleSheet";
+import { StyleSheet } from "@src/theme/Stylesheet";
 
 interface ImageProps {
     src: string;

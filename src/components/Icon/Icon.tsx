@@ -1,6 +1,6 @@
 import { BaseComponent } from "@src/theme/BaseComponent";
 import * as icons from './svgs/_index';
-import { StyleSheet } from "@src/theme/StyleSheet";
+import { StyleSheet } from "@src/theme/Stylesheet";
 
 const iconSizes = {
   xs: '12px',
