@@ -112,7 +112,11 @@ Feed.Header = () => {
       <Icon name="twitch" />
       <Icon name="instagram" />
       <Icon name="github" />
-      <Text>Feed Header</Text>
+      <Text>Atualizações</Text>
+      <iframe src="https://hermes.dio.me/certificates/VPGYAYQZ.pdf" width={650} height={400}></iframe> 
+      <iframe src="https://hermes.dio.me/certificates/FMKXV4CG.pdf" width={650} height={400}></iframe>  
+      <iframe src="https://hermes.dio.me/certificates/LJJNQWAD.pdf" width={650} height={400}></iframe>  
+      <iframe src="https://hermes.dio.me/certificates/LHV8BIHU.pdf" width={650} height={400}></iframe>  
     </Box>
   );
 };
